@@ -12,6 +12,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="bg-red-100 h-screen w-full flex">
+      <%= render 'components/menubar'  %>
+      <div class="bg-orange-100 h-full flex flex-col flex-1">
+        <%= render 'components/navbar' %>
+        <%= render 'components/content' %>
+      </div>
+    </div>
   </body>
 </html>
