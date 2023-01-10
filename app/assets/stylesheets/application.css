@@ -10,6 +10,27 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require material_icons.round
  *= require_tree .
  *= require_self
  */
+
+ .material-icons.round, .mi.round {
+   width: 10px;
+ }
+
+ .menu-active {
+   border-left-width: 4px;
+   border-color: rgb(239 68 68);
+ }
+
+ .menu-active-body {
+   background-color: rgb(254 202 202);
+ }
+
+ .menu-font {
+   font-style: normal;
+   font-family: sans-serif;
+   font-weight: 500;
+   font-size: 15px;
+ }

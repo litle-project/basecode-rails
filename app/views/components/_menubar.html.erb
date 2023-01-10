@@ -1,29 +1,30 @@
-<div class="bg-yellow-100 h-full w-[250px] flex flex-col gap-5">
+<div class="h-full w-[250px] flex flex-col gap-5">
   <div class="icon">
-    <div class="bg-blue-100 p-5 flex justify-center mb-5">
+    <div class="p-5 flex justify-center mb-5">
       <img src="/logo.png" alt="" width="100">
     </div>
   </div>
-  <div class="menu">
-    <div class="bg-red-100 flex justify-center p-3">
-      <a href="/users/create">menu 1</a>
+  <div class="menu menu-font flex flex-col gap-3">
+    <div class="border-l-4 px-5">
+      <div class="py-1 px-2 rounded-lg gap-5 w-full flex justify-start text-zinc-500 items-center">
+        <span class="flex items-center"><%= material_icon.shape(:widgets_rounded).round %></span>
+        <a href="/users/create">Dashboard</a>
+      </div>
     </div>
-    <div class="bg-red-100 flex justify-center p-3">
-      <a href="/users/edit">menu 2</a>
-    </div>
-    <div class="bg-red-100 flex justify-center p-3">
-      <a href="/users">menu 3</a>
-    </div>
-    <div class="bg-red-100 flex justify-center p-3">
-      <a href="/users/detail/1">menu 4</a>
+    <div class="border-l-4 menu-active px-5">
+      <div class="menu-active-body py-2 px-2 rounded-lg gap-5 flex justify-start items-center text-red-500">
+        <span class="flex items-center"><%= material_icon.shape(:group_rounded).round %></span>
+        <a href="/users/create">User Management</a>
+      </div>
     </div>
   </div>
   <div class="mode">
-    <div class="bg-violet-100 mt-5 p-5 flex gap-3">
-      <div class="text-md">Busy Mode</div>
-      <div class="">
-        <input type="checkbox" name="" value="">
-      </div>
+    <div class="mt-5 p-5 flex gap-3">
+      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Busy Mode</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" class="sr-only peer">
+      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-black dark:peer-focus:ring-black rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
+    </label>
     </div>
   </div>
 </div>

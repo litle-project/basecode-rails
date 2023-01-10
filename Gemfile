@@ -17,6 +17,7 @@ gem "bootsnap", require: false
 gem "figaro"
 gem 'mysql2', '~> 0.5.4'
 gem 'bcrypt'
+gem 'material_icons'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
