@@ -36,3 +36,7 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Application
+.env
+/db-data

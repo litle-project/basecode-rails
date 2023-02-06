@@ -1,8 +1,9 @@
 # Database Config
+DB_ADAPTER: 'postgresql'
 DB_DATABASE: ''
 DB_USERNAME: ''
 DB_PASSWORD: ''
 DB_HOST: ''
-DB_PORT: ''
+DB_POOL: 5
 
 # Redis Config
