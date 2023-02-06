@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App</title>
+    <title>Admin Rails</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="seagleax">
+    <meta name="description" content="rails-admin">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= asset_path('/template/assets/images/favicon.png') %>">
     <script src="https://cdn.tailwindcss.com"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link href="<%= asset_path('/template/dist/css/style.min.css') %>" rel="stylesheet">
+    <link href="<%= asset_path('/template/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') %>" rel="stylesheet">
+    <script src="<%= asset_path('/template/dist/js/sidebarmenu.js') %>"></script>
   </head>
 
   <body>
-    <div class="h-screen w-full flex">
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <div
+      id="main-wrapper"
+      data-theme="light"
+      data-layout="vertical"
+      data-navbarbg="skin6"
+      data-sidebartype="full"
+      data-sidebar-position="fixed"
+      data-header-position="fixed"
+      data-boxed-layout="full"
+    >
+      <%= render 'components/navbar' %>
       <%= render 'components/menubar'  %>
-      <div class="bg-orange-100 h-full flex flex-col flex-1">
-        <%= render 'components/navbar' %>
-        <%= render 'components/content' %>
-      </div>
+      <%= render 'components/content' %>
     </div>
   </body>
 </html>
