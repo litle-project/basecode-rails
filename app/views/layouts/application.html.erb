@@ -8,14 +8,24 @@
     <meta name="description" content="rails-admin">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/png" sizes="16x16" href="<%= asset_path('/template/assets/images/favicon.png') %>">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="<%= asset_path('/template/dist/css/style.min.css') %>" rel="stylesheet">
+    <link href="<%= asset_path('/template/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') %>" rel="stylesheet">
+    <script src="<%= asset_path('/template/dist/js/sidebarmenu.js') %>"></script>
+    <script src="<%= asset_path('/template/assets/libs/jquery/dist/jquery.min.js') %>"></script>
+    <script src="<%= asset_path('/template/assets/libs/popper.js/dist/umd/popper.min.js') %>"></script>
+    <script src="<%= asset_path('/template//assets/libs/bootstrap/dist/js/bootstrap.min.js') %>"></script>
+    <script src="<%= asset_path('/template/dist/js/app-style-switcher.js') %>"></script>
+    <script src="<%= asset_path('/template/dist/js/feather.min.js') %>"></script>
+    <script src="<%= asset_path('/template/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js') %>"></script>
+    <script src="<%= asset_path('/template/assets/extra-libs/sparkline/sparkline.js') %>"></script>
+    <script src="<%= asset_path('/template/dist/js/sidebarmenu.js') %>"></script>
+    <script src="<%= asset_path('/template/dist/js/custom.min.js') %>"></script>
+    <script src="<%= asset_path('/template/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js') %>"></script>
+    <script src="<%= asset_path('/template/dist/js/pages/datatable/datatable-basic.init.js') %>"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <link href="<%= asset_path('/template/dist/css/style.min.css') %>" rel="stylesheet">
-    <link href="<%= asset_path('/template/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') %>" rel="stylesheet">
-    <script src="<%= asset_path('/template/dist/js/sidebarmenu.js') %>"></script>
   </head>
 
   <body>
